@@ -22,7 +22,7 @@ const Consult = () => {
         </h2>
 
         <p className="text-xl leading-[150%] max-w-[528px] mb-6">
-          So, let's make it easy. Schedule a 15 minute consultation so we get to
+          So, let&apos;s make it easy. Schedule a 15 minute consultation so we get to
           know each other.
         </p>
         <Link

@@ -12,7 +12,7 @@ const ContactHeaderContent = () => {
           Talk with me or schedule a session.
         </h1>
         <div className="w-full rounded-3xl bg-[#f9faf9] p-6 md:p-12 text-base leading-[180%]">
-          If you're feeling overwhelmed or stuck, you're not alone. I offer a
+          If you&apos;re feeling overwhelmed or stuck, you&apos;re not alone. I offer a
           safe, supportive space for individuals, couples, and families to heal
           and grow.
         </div>

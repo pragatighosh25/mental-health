@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <h2 className="text-[54px] leading-[100%] text-[#213650]">
             <p className="m-0">Welcome!</p>
-            <p className="m-0">I’m Dr. Serena Blake</p>
+            <p className="m-0">I&apos;m Dr. Serena Blake</p>
           </h2>
         </div>
       </div>
@@ -58,10 +58,10 @@ const About = () => {
             </div>
             <div className="text-base leading-[180%] flex flex-col gap-2">
               <p>
-                <strong>In-person:</strong> Tue & Thu, 10 AM–6 PM
+                <strong>In-person:</strong> Tue & Thu, 10 AM to 6 PM
               </p>
               <p>
-                <strong>Virtual via Zoom:</strong> Mon, Wed & Fri, 1 PM–5 PM
+                <strong>Virtual via Zoom:</strong> Mon, Wed & Fri, 1 PM to 5 PM
               </p>
             </div>
           </div>

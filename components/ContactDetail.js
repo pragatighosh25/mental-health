@@ -13,7 +13,7 @@ const contactDetails = [
   {
     icon: "Phone.svg",
     title: "Phone",
-    description: "Have questions or need guidance? We're just a call away.",
+    description: "Have questions or need guidance? We&apos;re just a call away.",
     detail: "+(323) 555-0192 →",
     href: "tel:+13235550192",
   },
@@ -68,8 +68,8 @@ const ContactDetailsSection = () => {
               Get in Touch
             </h2>
             <p className="text-xl leading-[150%]">
-              We're here to listen. Reach out to start your healing journey —
-              you’re not alone.
+              We&apos;re here to listen. Reach out to start your healing journey —
+              you&apos;re not alone.
             </p>
           </div>
 
