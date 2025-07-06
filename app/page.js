@@ -16,29 +16,29 @@ export default function Home() {
       <main className="">
         <HeroSection />
         <Stats />
-        <section id="services" className="">
+        <section id="services">
           <Services />
         </section>
-        <section id="consult" className="">
+        <section id="consult">
           <Consult />
         </section>
-        <section id="about" className="">
+        <section id="about">
           <About />
         </section>
-        <section id="featured" className="">
+        <section id="featured">
           <Featured />
         </section>
-        <section id="testimonials" className="">
+        <section id="testimonials">
           <Testimonials />
         </section>
-        <section id="books" className="">
+        <section id="books" >
           <Books />
         </section>
-        <section id="faq" className="">
+        <section id="faq">
           <FAQ />
         </section>
         <ContactHeader />
-        <section id= "location" className="">
+        <section id= "location">
           <ContactDetail />
         </section>
         

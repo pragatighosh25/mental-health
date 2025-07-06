@@ -22,8 +22,8 @@ const contactDetails = [
     title: "Mail",
     description:
       "Reach out anytime — every message is treated with care and confidentiality.",
-    detail: "serena@blakepsychology.com →",
-    href: "mailto:serena@blakepsychology.com",
+    detail: "serena@mindcure.com →",
+    href: "mailto:serena@mindcure.com",
   },
 ];
 
