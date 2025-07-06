@@ -1,10 +1,13 @@
 'use client';
 import { useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 
 const HeroSection = () => {
+  const router = useRouter();
+
   const onGetStartedClick = useCallback(() => {
-    window.open("https://main.d1hiqvipguwtuq.amplifyapp.com/book", "_blank");
-  }, []);
+    router.push('/contact');
+  }, [router]);
 
   return (
     <section

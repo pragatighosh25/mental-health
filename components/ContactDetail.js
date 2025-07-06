@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const contactDetails = [
   {
@@ -64,60 +65,12 @@ const ContactDetailsSection = () => {
               We're here to listen. Reach out to start your healing journey — you’re not alone.
             </p>
           </div>
-
-          <form className="w-full flex flex-col gap-4 text-base px-4" method="POST" action="#">
-            {/* Name & Contact */}
-            <div className="flex flex-col md:flex-row gap-4">
-              <div className="flex-1 flex flex-col gap-4">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  className={inputClass}
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className={inputClass}
-                  required
-                />
-              </div>
-              <div className="flex-1 flex flex-col gap-4">
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  className={inputClass}
-                  required
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone"
-                  className={inputClass}
-                />
-              </div>
-            </div>
-
-            {/* Message */}
-            <textarea
-              name="message"
-              rows={5}
-              placeholder="Message"
-              className={`${inputClass} h-[138px] resize-none`}
-              required
-            ></textarea>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full h-14 rounded-md border-2 border-[#009da3] text-[#008186] font-medium flex items-center justify-center py-4 px-6 hover:bg-[#009da3] hover:text-white transition-all duration-300"
-            >
-              Submit
-            </button>
-          </form>
+      {/* Get Started Button (desktop) */}
+      <Link href="/contact">
+      <button className="hidden md:block bg-darkcyan text-white text-sm font-medium rounded-xl border-2 border-darkcyan px-6 py-2 font-ibm-plex-sans transition-transform duration-300 transform hover:scale-105 hover:shadow-md">
+        Get Started
+      </button>
+      </Link>
         </div>
       </div>
     </div>
