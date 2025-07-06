@@ -1,13 +1,13 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
-    time: '',
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+    time: "",
     consent: false,
   });
 
@@ -15,20 +15,20 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const inputClass =
-    'w-full border border-[#ccc] rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#009da3] text-[#213650] bg-white';
+    "w-full border border-[#ccc] rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#009da3] text-[#213650] bg-white";
 
   const validate = () => {
     const newErrors = {};
-    if (!form.name.trim()) newErrors.name = 'Name is required.';
-    if (!form.phone.trim()) newErrors.phone = 'Phone is required.';
+    if (!form.name.trim()) newErrors.name = "Name is required.";
+    if (!form.phone.trim()) newErrors.phone = "Phone is required.";
     if (!form.email.trim()) {
-      newErrors.email = 'Email is required.';
+      newErrors.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      newErrors.email = 'Invalid email format.';
+      newErrors.email = "Invalid email format.";
     }
-    if (!form.message.trim()) newErrors.message = 'Message is required.';
-    if (!form.time.trim()) newErrors.time = 'Preferred time is required.';
-    if (!form.consent) newErrors.consent = 'You must agree before submitting.';
+    if (!form.message.trim()) newErrors.message = "Message is required.";
+    if (!form.time.trim()) newErrors.time = "Preferred time is required.";
+    if (!form.consent) newErrors.consent = "You must agree before submitting.";
     return newErrors;
   };
 
@@ -36,7 +36,7 @@ export default function ContactForm() {
     const { name, value, type, checked } = e.target;
     setForm((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -48,13 +48,13 @@ export default function ContactForm() {
       return;
     }
 
-    setSubmitted(true); 
+    setSubmitted(true);
   };
 
   return (
     <section className="w-full bg-white py-16 px-6 md:px-16">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-[#213650] text-center">
+        <h2 className="text-[32px] md:text-[42px] leading-tight font-normal font-noto-sans text-[#213650] text-center mb-8">
           Contact Me
         </h2>
 
@@ -78,7 +78,8 @@ export default function ContactForm() {
               Your form has been submitted!
             </h3>
             <p className="text-[#523c00]">
-              Thank you for reaching out. I’ll get back to you as soon as possible!
+              Thank you for reaching out. I’ll get back to you as soon as
+              possible!
             </p>
           </div>
         ) : (
@@ -93,7 +94,9 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className={inputClass}
               />
-              {errors.name && <p className="text-sm text-red-500 mt-1">{errors.name}</p>}
+              {errors.name && (
+                <p className="text-sm text-red-500 mt-1">{errors.name}</p>
+              )}
             </div>
 
             {/* Phone */}
@@ -106,7 +109,9 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className={inputClass}
               />
-              {errors.phone && <p className="text-sm text-red-500 mt-1">{errors.phone}</p>}
+              {errors.phone && (
+                <p className="text-sm text-red-500 mt-1">{errors.phone}</p>
+              )}
             </div>
 
             {/* Email */}
@@ -119,7 +124,9 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className={inputClass}
               />
-              {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email}</p>}
+              {errors.email && (
+                <p className="text-sm text-red-500 mt-1">{errors.email}</p>
+              )}
             </div>
 
             {/* Message */}
@@ -147,7 +154,9 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className={inputClass}
               />
-              {errors.time && <p className="text-sm text-red-500 mt-1">{errors.time}</p>}
+              {errors.time && (
+                <p className="text-sm text-red-500 mt-1">{errors.time}</p>
+              )}
             </div>
 
             {/* Checkbox */}
@@ -160,11 +169,15 @@ export default function ContactForm() {
                 className="mt-1 accent-[#009da3]"
               />
               <label className="text-sm text-[#213650]">
-               By checking this box, I consent to receive communication related to my inquiry. I understand my information will be handled in accordance with the privacy policy and will not be shared without my consent.
-
+                By checking this box, I consent to receive communication related
+                to my inquiry. I understand my information will be handled in
+                accordance with the privacy policy and will not be shared
+                without my consent.
               </label>
             </div>
-            {errors.consent && <p className="text-sm text-red-500">{errors.consent}</p>}
+            {errors.consent && (
+              <p className="text-sm text-red-500">{errors.consent}</p>
+            )}
 
             {/* Submit Button */}
             <button
