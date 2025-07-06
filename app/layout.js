@@ -5,20 +5,14 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Mindcure',
   description: 'Mental wellness site',
-  icons: {
-    icon: [
-      {
-        url: '/favicon.png',
-        type: 'image/png',
-        sizes: '32x32',
-      },
-    ],
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+       <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body>
         <Navbar />
         {children}
