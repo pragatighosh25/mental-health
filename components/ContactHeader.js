@@ -21,12 +21,12 @@ const ContactHeaderContent = () => {
       {/* Right Image */}
       <div className="w-full md:w-auto">
   <Image
-    src="/ContactHeaderImage.png"
+    src="/About.png"
     width={845}
     height={450}
     alt="Contact Header"
     className="rounded-3xl object-cover"
-    style={{ width: "845px", height: "450px" }} // ✅ Ensures fixed size
+    style={{ width: "845px", height: "450px" }} 
     loading="lazy"
   />
 </div>

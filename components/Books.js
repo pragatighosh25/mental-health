@@ -36,7 +36,7 @@ const BookSection = () => {
         {books.map((book, index) => (
           <div
             key={index}
-            className="w-full sm:w-[360px] bg-white rounded-[20px] shadow-md overflow-hidden flex flex-col"
+            className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:bg-[#f5f9f5] w-full sm:w-[360px] bg-white rounded-[20px] shadow-md overflow-hidden flex flex-col"
           >
             {/* Book Image */}
             <Image

@@ -7,21 +7,23 @@ const contactDetails = [
     title: "Location",
     description:
       "A calm and confidential space to begin your journey toward healing.",
-    detail: "27 Harmony Lane, Suite 24, Willowfield, NY →",
+    detail: "1287 Maplewood Drive, Los Angles , CA 9026 →",
+    href: "https://www.google.com/maps?q=1287+Maplewood+Drive,+Los+Angeles,+CA+90026",
   },
   {
     icon: "Phone.svg",
     title: "Phone",
-    description:
-      "Have questions or need guidance? We're just a call away.",
-    detail: "+123-456-7890 →",
+    description: "Have questions or need guidance? We're just a call away.",
+    detail: "+(323) 555-0192 →",
+    href: "tel:+13235550192",
   },
   {
     icon: "EnvelopeSimple.svg",
     title: "Mail",
     description:
       "Reach out anytime — every message is treated with care and confidentiality.",
-    detail: "support@mindcure.com →",
+    detail: "serena@blakepsychology.com →",
+    href: "mailto:serena@blakepsychology.com",
   },
 ];
 
@@ -34,10 +36,13 @@ const ContactDetailsSection = () => {
       <div className="w-full max-w-[1152px] flex flex-col items-center gap-12">
         {/* Top Info Cards */}
         <div className="w-full flex flex-wrap gap-6 justify-center">
-          {contactDetails.map(({ icon, title, description, detail }) => (
-            <div
+          {contactDetails.map(({ icon, title, description, detail, href }) => (
+            <a
               key={title}
-              className="flex-1 min-w-[280px] max-w-[370px] bg-white shadow-[5px_9px_0px_rgba(227,_232,_227,_0.67)] rounded-3xl p-6 py-12 flex flex-col gap-3"
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 min-w-[280px] max-w-[370px] bg-white shadow-[5px_9px_0px_rgba(227,_232,_227,_0.67)] rounded-3xl p-6 py-12 flex flex-col gap-3 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <Image
                 src={icon}
@@ -50,8 +55,9 @@ const ContactDetailsSection = () => {
                 {title}
               </div>
               <p className="leading-[150%] text-[#425f80]">{description}</p>
-              <p className="leading-[150%] text-[#008186]">{detail}</p>
-            </div>
+              <p className="leading-[150%] text-[#008186]">{detail}</p>{" "}
+              {/* underline removed */}
+            </a>
           ))}
         </div>
 
@@ -62,15 +68,17 @@ const ContactDetailsSection = () => {
               Get in Touch
             </h2>
             <p className="text-xl leading-[150%]">
-              We're here to listen. Reach out to start your healing journey — you’re not alone.
+              We're here to listen. Reach out to start your healing journey —
+              you’re not alone.
             </p>
           </div>
-      {/* Get Started Button (desktop) */}
-      <Link href="/contact">
-      <button className="hidden md:block bg-darkcyan text-white text-sm font-medium rounded-xl border-2 border-darkcyan px-6 py-2 font-ibm-plex-sans transition-transform duration-300 transform hover:scale-105 hover:shadow-md">
-        Get Started
-      </button>
-      </Link>
+
+          {/* Get Started Button (desktop) */}
+          <Link href="/contact">
+            <button className="hidden md:block bg-darkcyan text-white text-sm font-medium rounded-xl border-2 border-darkcyan px-6 py-2 font-ibm-plex-sans transition-transform duration-300 transform hover:scale-105 hover:shadow-md">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </div>

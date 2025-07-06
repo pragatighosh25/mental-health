@@ -3,25 +3,25 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Individual Therapy",
+    title: "Anxiety & Stress Management",
     description:
-      "One-on-one therapy focused on your personal challenges, emotional well-being, and mental health goals.",
+      "Personalized strategies to help you manage stress, reduce anxiety, and regain a sense of calm and control in your life.",
     image: "/Services Card Illustration.svg",
-    link: "/services/individual-therapy",
+    link: "/services/anxiety-stress-management",
   },
   {
-    title: "Couples Counselling",
+    title: "Relationship Counseling",
     description:
-      "Therapy for partners to deepen trust, resolve conflicts, and build stronger emotional bonds through guided conversations.",
+      "Supportive sessions to help individuals or couples improve communication, rebuild trust, and strengthen emotional connections.",
     image: "/Services Card Illustration2.svg",
-    link: "/services/couples-counselling",
+    link: "/services/relationship-counseling",
   },
   {
-    title: "Family Therapy",
+    title: "Trauma Recovery",
     description:
-      "Guided support for families to resolve conflicts and grow together through life’s changing seasons.",
+      "Compassionate care designed to help you heal from past trauma, rebuild resilience, and move forward with confidence.",
     image: "/Services Card Illustration3.svg",
-    link: "/services/family-therapy",
+    link: "/services/trauma-recovery",
   },
 ];
 
@@ -31,8 +31,8 @@ const Services = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-12">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
-          <h2 className="text-[54px] font-semibold leading-[100%]">Services</h2>
-          <p className="text-xl leading-[150%] max-w-xl">
+          <h2 className="text-[54px] font-semibold leading-[100%] text-darkslategray">Services</h2>
+          <p className="text-xl leading-[150%] max-w-xl text-darkslategray">
             Here you find dedicated solutions to help you improve your mental and emotional well-being.
           </p>
         </div>
@@ -42,7 +42,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex-1 bg-white rounded-3xl shadow-[5px_9px_0px_#E3E8E3AA] hover:shadow-[8px_12px_20px_#E3E8E3AA] transition-transform hover:-translate-y-1 duration-300 p-8 flex flex-col items-center gap-5"
+              className="flex-1 bg-white rounded-3xl shadow-[5px_9px_0px_#E3E8E3AA] hover:shadow-[8px_12px_20px_#E3E8E3AA] transition-transform hover:-translate-y-1 duration-300 p-8 flex flex-col items-center gap-5 text-darkslategray"
             >
               <Image
                 src={service.image}
@@ -51,9 +51,9 @@ const Services = () => {
                 height={120}
                 className="object-contain"
               />
-              <h3 className="text-[22px] font-medium">{service.title}</h3>
+              <h3 className="text-[22px] font-medium text-darkslategray">{service.title}</h3>
               <div className="w-[266px] border-t border-lightsteelblue" />
-              <p className="text-base leading-[180%] text-darkslategray-100 text-center">
+              <p className="text-base leading-[180%] text-darkslategray-100 text-center text-darkslategray">
                 {service.description}
               </p>
               <Link

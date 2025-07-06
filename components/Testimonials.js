@@ -49,7 +49,7 @@ const Testimonials = () => {
             ))}
           </div>
           <Image
-            src="/About Card Image.png"
+            src="/About1.png"
             alt="Featured Client"
             width={264}
             height={454}
@@ -73,7 +73,7 @@ const Testimonials = () => {
               {testimonials.map((t, idx) => (
                 <div
                   key={idx}
-                  className="snap-start min-w-[256px] sm:min-w-[288px] shadow-[5px_9px_0px_#e3e8e3aa] rounded-3xl bg-white h-56 p-6 flex flex-col justify-center"
+                  className="snap-start min-w-[256px] sm:min-w-[288px] shadow-[5px_9px_0px_#e3e8e3aa] rounded-3xl bg-white h-56 p-6 flex flex-col justify-center hover:-translate-y-2 hover:shadow-xl transition-all duration-300 ease-in-out"
                 >
                   <h3 className="text-[18px] font-medium text-[#213650] mb-2">{t.title}</h3>
                   <p className="text-sm text-[#152b47] leading-[150%]">

@@ -3,31 +3,20 @@ import { useState } from "react";
 import Image from "next/image";
 
 const faqData = [
-  
   {
-    question: "What do I need for virtual therapy?",
+    question: "Do you accept insurance?",
     answer:
-      "To get started with virtual therapy, you’ll need a stable internet connection, a quiet and private space where you feel safe, and a device such as a smartphone, tablet, or computer with a working camera and microphone. Headphones are also recommended for better audio and privacy.",
+      "I do not accept insurance directly, but I can provide a superbill that you may submit to your insurance provider for potential reimbursement. Please check with your provider for eligibility.",
   },
   {
-    question: "Is virtual therapy confidential?",
+    question: "Are online sessions available?",
     answer:
-      "Absolutely. Virtual therapy sessions are conducted using secure, HIPAA-compliant platforms to ensure your privacy. Therapists are bound by the same ethical and legal standards as in-person sessions, so everything you share remains confidential unless there is a risk of harm to yourself or others.",
+      "Yes, all sessions are conducted virtually using Zoom, providing you with convenient access to therapy from the comfort of your own space.",
   },
   {
-    question: "Can I use insurance for virtual therapy?",
+    question: "What is your cancellation policy?",
     answer:
-      "Yes, many insurance providers now offer coverage for virtual therapy, especially after the increased demand post-pandemic. It’s always best to contact your insurance company to confirm your benefits, coverage limits, and whether your therapist is in-network or accepts your plan.",
-  },
-  {
-    question: "Is virtual therapy as effective as in-person therapy?",
-    answer:
-      "Yes, research shows that for many concerns like anxiety, depression, stress management, and relationship issues, virtual therapy can be just as effective as in-person sessions. The key is finding a therapist you connect with and creating a comfortable environment for open communication.",
-  },
-  {
-    question: "When should one seek psychotherapy?",
-    answer:
-      "You should consider psychotherapy when you're feeling overwhelmed, emotionally distressed, facing difficult life transitions, or struggling with mental health conditions. Therapy offers a safe, non-judgmental space to explore your thoughts, gain insight, and develop healthier coping mechanisms.",
+      "A minimum of 24-hour notice is required for cancellations or rescheduling. Late cancellations may be subject to a cancellation fee.",
   },
 ];
 
