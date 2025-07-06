@@ -13,7 +13,7 @@ const About = () => {
       <div className="absolute top-7 left-[50%] -translate-x-1/2 w-[90%] max-w-[1104px] flex flex-col items-center gap-12">
         <Image
           src="/about.png"
-          alt="Dr. Lauren Harris"
+          alt="Dr. Dr Serena Blake"
           width={928}
           height={384}
           className="rounded-3xl object-cover w-full max-w-[928px] h-96"
@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <h2 className="text-[54px] leading-[100%] text-[#213650]">
             <p className="m-0">Welcome!</p>
-            <p className="m-0">I’m Dr. Lauren Harris</p>
+            <p className="m-0">I’m Dr. Dr Serena Blake</p>
           </h2>
         </div>
       </div>
