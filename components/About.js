@@ -13,7 +13,7 @@ const About = () => {
       {/* Top Image and Intro */}
       <div className="pt-7 w-full flex flex-col items-center gap-12 px-4 md:px-0 max-w-[1104px] mx-auto">
         <Image
-          src="/About.png"
+          src="/about-temp.png"
           alt="Dr Serena Blake"
           width={928}
           height={384}

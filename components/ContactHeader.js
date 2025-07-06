@@ -21,7 +21,7 @@ const ContactHeaderContent = () => {
       {/* Right Image */}
       <div className="w-full md:w-auto">
   <Image
-    src="/About.png"
+    src="/about-temp.png"
     width={845}
     height={450}
     alt="Contact Header"
